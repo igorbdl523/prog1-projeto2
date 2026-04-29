@@ -1,13 +1,31 @@
 <!DOCTYPE html>
 <html lang=pt-br>
-<head>
-    <meta charset='utf-8'>
-    <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <title>Page Title</title>
-    <link rel='stylesheet' href='main.css'>
-    <script type="module" src="main.js" defer async></script></script>
-</head>
-<body>
 
+<head>
+	<meta charset='utf-8'>
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<title>Page Title</title>
+	<link rel='stylesheet' href='main.css'>
+	<script type="module" defer async>
+	 import './main.js';
+	</script>
+</head>
+
+<body>
+	<main>
+		<div class="adicionar">
+			<input type="text" placeholder="digite a senha">
+			<button id="adicionar">adicionar</button>
+		</div>
+		<div class="tarefas">
+			<template>
+				<div class="tarefas">
+					<span>exemplo de tarefas</span>
+					<button class="excluir">excluir</button>
+				</div>
+			</template>
+		</div>
+	</main>
 </body>
+
 </html>
